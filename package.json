@@ -36,7 +36,9 @@
     "gulp-uglify": "1.1.0",
     "is_object": "git://github.com/nathanfaucett/is_object",
     "less": "2.4.0",
-    "livereload": "nathanfaucett/livereload"
+    "livereload": "nathanfaucett/livereload",
+    "tasks": "git://github.com/nathanfaucett/tasks",
+    "vinyl-fs": "^1.0.0"
   },
   "dependencies": {
     "border-radius.less": "git://github.com/nathanfaucett/border-radius.less",

@@ -1,11 +1,11 @@
-var gulp = require("gulp");
+var vfs = require("vinyl-fs");
 
 
 module.exports = function(config) {
     return function () {
-        return gulp.src([
+        return vfs.src([
             config.paths.fonts + "**/*",
             config.paths.img + "**/*"
-        ]).pipe(gulp.dest(config.paths.build));
+        ]).pipe(vfs.dest(config.paths.build));
     };
 };

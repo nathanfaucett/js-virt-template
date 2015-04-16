@@ -1,11 +1,11 @@
-var gulp = require("gulp"),
+var vfs = require("vinyl-fs"),
     jsbeautifier = require("gulp-jsbeautifier");
 
 
 module.exports = function(config) {
     return function() {
-        return gulp.src([config.paths.js + "/**/*.js"])
+        return vfs.src([config.paths.js + "/**/*.js"])
             .pipe(jsbeautifier())
-            .pipe(gulp.dest(config.paths.js));
+            .pipe(vfs.dest(config.paths.js));
     };
 };

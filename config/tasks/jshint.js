@@ -1,10 +1,10 @@
-var gulp = require("gulp"),
+var vfs = require("vinyl-fs"),
     jshint = require("gulp-jshint");
 
 
 module.exports = function(config) {
     return function() {
-        return gulp.src(config.paths.js + "/**/*.js")
+        return vfs.src(config.paths.js + "/**/*.js")
             .pipe(jshint({
                 es3: true,
                 unused: true,

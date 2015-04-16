@@ -1,12 +1,12 @@
-var gulp = require("gulp"),
+var vfs = require("vinyl-fs"),
     filePath = require("file_path"),
     minifyHTML = require("gulp-minify-html");
 
 
 module.exports = function(config) {
     return function() {
-        return gulp.src(config.paths.ejs_out)
+        return vfs.src(config.paths.ejs_out)
             .pipe(minifyHTML())
-            .pipe(gulp.dest(filePath.dir(config.paths.ejs_out)));
+            .pipe(vfs.dest(filePath.dir(config.paths.ejs_out)));
     };
 };
