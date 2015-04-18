@@ -21,7 +21,6 @@
     "comn_css": "nathanfaucett/comn_css",
     "del": "^1.1.1",
     "ejs": "nathanfaucett/ejs",
-    "extend": "nathanfaucett/extend",
     "file_path": "nathanfaucett/file_path",
     "file_utils": "nathanfaucett/file_utils",
     "gaze": "^0.5.1",
@@ -37,7 +36,6 @@
     "is_object": "git://github.com/nathanfaucett/is_object",
     "less": "2.4.0",
     "livereload": "nathanfaucett/livereload",
-    "tasks": "git://github.com/nathanfaucett/tasks",
     "vinyl-fs": "^1.0.0"
   },
   "dependencies": {
